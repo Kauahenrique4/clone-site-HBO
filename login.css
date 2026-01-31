@@ -1,0 +1,140 @@
+
+.login-body {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("img/background-HBO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    background-color: #02021a;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container img {
+    width: 140px;
+    margin-bottom: 30px;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #818181; 
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #8a2be2;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(181, 53, 246, 0.6);
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.login-link a {
+    color: #b535f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+.login-container {
+    animation: loginFade 0.7s ease forwards;
+}
+.login-form button {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.login-form button:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+@keyframes loginFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.login-form input {
+    font-size: 15px;
+}
+
+.login-form input:focus {
+    box-shadow: 0 0 0 2px rgba(181, 53, 246, 0.6);
+}
+@media (max-width: 480px) {
+
+    .login-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .login-container img {
+        width: 120px;
+        margin-bottom: 25px;
+    }
+
+    .login-container h2 {
+        font-size: 22px;
+    }
+
+    .login-form input {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .login-form button {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .login-link {
+        font-size: 13px;
+    }
+}
